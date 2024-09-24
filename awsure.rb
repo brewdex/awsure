@@ -5,21 +5,21 @@
 class Awsure < Formula
   desc "Helps setting aws cli credentials with azure login"
   homepage "https://github.com/vahid-haghighat/awsure"
-  version "1.4.0"
+  version "1.4.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.0/awsure_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "04dae4ae24fabc64935d760b724c18175a8d27d7eaf5c7f12eef8fe3f41177d3"
+      url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.1/awsure_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "725135afc6e544cfb1b742e774a8d24d6cd38bbb0947622b8ebf50ea60eb9c49"
 
       def install
         bin.install "awsure"
       end
     end
     on_arm do
-      url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.0/awsure_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7760d7430825136531ecf866a1897394db26c7b113857bc206b30fc23759fb66"
+      url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.1/awsure_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "5dd50d719fff00b7e52b7c4361beab7f9120c8eeece52990ee1fd4f9214ffa5e"
 
       def install
         bin.install "awsure"
@@ -30,8 +30,8 @@ class Awsure < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.0/awsure_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "cf10e48694d175821f5328f890ac77c43b0b085ad474d48c9dea09e9b029fe8a"
+        url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.1/awsure_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "0524555db108cecba908cc64ce39aaa7749b0fc707d7fbfc4b84f9906ed490ba"
 
         def install
           bin.install "awsure"
@@ -40,8 +40,8 @@ class Awsure < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.0/awsure_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "173f081b4cce8188ce48248506a311b7fc9a88d9a4a5bc35cc8ce58cf1194f1d"
+        url "https://github.com/vahid-haghighat/awsure/releases/download/v1.4.1/awsure_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "48b459f3435925b06c4a95e96c3097dd4912bb42add609e44a7578ad4528cf12"
 
         def install
           bin.install "awsure"
